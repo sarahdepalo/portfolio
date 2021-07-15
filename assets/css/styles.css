@@ -1,0 +1,47 @@
+.site-title {
+    font-family: 'Yellowtail', cursive;
+    font-size: 35px;
+    color:white;
+    padding-left: 60px;
+    padding-bottom: 5px;
+}
+
+nav {
+    padding: 10px 20px;
+    background: #000e4d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    align-self: center;
+    padding-right: 60px;
+
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform:uppercase;
+}
+
+
+.project-col p {
+    text-align: start;
+    margin-top: 55px;
+}
+
+.project-col h3 {
+    text-align: start;
+}
+
+@media screen and (max-width: 980px) {
+
+    .project-col p {
+        margin-top: 5px;
+    }
+
+}
