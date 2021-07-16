@@ -1,7 +1,7 @@
 .site-title {
     font-family: 'Yellowtail', cursive;
     font-size: 35px;
-    color:white;
+    color: white;
     padding-left: 60px;
     padding-bottom: 5px;
 }
@@ -17,7 +17,6 @@ nav {
 nav ul {
     align-self: center;
     padding-right: 60px;
-
 }
 
 nav li {
@@ -25,9 +24,31 @@ nav li {
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
+.bee-icon {
+    height: 160px;
+    margin-bottom: -13px;
+}
+
+/* Class is toggled on click s*/
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.spin {
+    animation-name: spinning;
+    animation-duration: 2s;
+    animation-iteration-count:initial;
+    animation-timing-function: linear;
+}
 
 .project-col p {
     text-align: start;
@@ -39,9 +60,7 @@ nav li {
 }
 
 @media screen and (max-width: 980px) {
-
     .project-col p {
         margin-top: 5px;
     }
-
 }

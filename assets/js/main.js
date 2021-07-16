@@ -30,3 +30,11 @@
 		$('.scrolly').scrolly();
 
 })(jQuery);
+
+
+//Adds spin class to bee icon
+const beeIcon = document.getElementById('beeIcon');
+beeIcon.addEventListener('click', () => {
+	beeIcon.classList.toggle('spin');
+
+});
