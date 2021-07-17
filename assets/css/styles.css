@@ -168,27 +168,15 @@ nav li {
         height: 45px;
         margin-top: 5px;
     }
-    .project-icons ul, li {
-        /* display: inline !important; */
-        padding: 0px;
-    }
 
     .project-icons img {
         height: 36px;
         display: inline;
         width: auto !important;
-    }
-
-    ul.actions li {
-        vertical-align: middle;
-        display: inline;
-        align-items: center;
-    }
-
-    .actions {
-        flex-direction: row;
-    }
+    } 
 }
+
+/* specifically adjust the project items to display inline */
 
 @media screen and (max-width: 480px) {
 
