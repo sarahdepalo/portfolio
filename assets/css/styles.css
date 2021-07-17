@@ -2,29 +2,50 @@
     font-family: 'Yellowtail', cursive;
     font-size: 35px;
     color: white;
+    margin-top:15px;
     padding-left: 60px;
     padding-bottom: 5px;
 }
 
 nav {
-    padding: 10px 20px;
-    background: #000e4d;
+    padding: 0px 20px;
+    margin-bottom: -20px;
+    background-color: #170b4d;
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
+nav a {
+    text-decoration: none;
+    border-bottom: 0px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    
+}
+
+nav a:hover {
+    color: #8addaa;
+}
+
 nav ul {
     align-self: center;
     padding-right: 60px;
+    margin-top: 15px;
 }
 
 nav li {
     list-style: none;
     display: inline;
+    margin-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase;
+}
+
+#header a {
+    text-decoration: none;
+    border-bottom: 0px;
 }
 
 .bee-icon {
@@ -46,8 +67,29 @@ nav li {
 .spin {
     animation-name: spinning;
     animation-duration: 2s;
-    animation-iteration-count:initial;
+    animation-iteration-count: initial;
     animation-timing-function: linear;
+}
+
+/* About Me */
+
+.about-me img {
+    border-radius: 25px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills */
+
+.major-icons img {
+    height: 70px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+/* Projects */
+
+#projects h3 {
+    font-size: 23px;
 }
 
 .project-col p {
@@ -55,12 +97,117 @@ nav li {
     margin-top: 55px;
 }
 
-.project-col h3 {
-    text-align: start;
-}
+/* fade-in animation */
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 1;
+ }
+ 
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+/* Mobile Responsiveness */
 
 @media screen and (max-width: 980px) {
     .project-col p {
         margin-top: 5px;
     }
+
+    nav {
+        padding: 0px;
+    }
+
+    .site-title {
+        padding-left:20px;
+    }
+
+    nav ul {
+        padding-right: 5px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .bee-icon {
+        height: 150px;
+    }
+
+    #about-me-img {
+        height: 300px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .image.fit .about-me {
+        width:auto;
+    }
+
+    #resume {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #skill-icons img {
+        height: 45px;
+        margin-top: 5px;
+    }
+    .project-icons ul, li {
+        /* display: inline !important; */
+        padding: 0px;
+    }
+
+    .project-icons img {
+        height: 36px;
+        display: inline;
+        width: auto !important;
+    }
+
+    ul.actions li {
+        vertical-align: middle;
+        display: inline;
+        align-items: center;
+    }
+
+    .actions {
+        flex-direction: row;
+    }
 }
+
+@media screen and (max-width: 480px) {
+
+    ul.project-icons:not(.fixed) {
+        -moz-flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-left: 0;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.actions:not(.fixed) li:first-child {
+        padding-top: .8em;
+    }
+}
+
+/* IPAD RESPONSIVENSS */
+
+/* Need to fix image size, resume button, skill icons, and project icons! * /

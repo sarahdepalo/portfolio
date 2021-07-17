@@ -8,13 +8,20 @@
 
 <head>
 	<title>Sarah dePalo | Software Developer</title>
+	<link rel="shortcut icon" type="image.png" href="images/bee_favicon.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<!-- Personal Style Sheet -->
 	<link rel="stylesheet" href="./assets/css/styles.css">
+	<!-- CSS animation stylesheet-->
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +29,7 @@
 </head>
 
 <body class="is-preload">
+	<!-- Header and Nav -->
 	<nav>
 		<h1 class="site-title">Sarah</h1>
 		<ul>
@@ -29,13 +37,11 @@
 			<li><a href="#contact" class="scrolly">Contact</a></li>
 		</ul>
 	</nav>
-	<!-- Header -->
 	<section id="header">
 		<div class="inner">
-			<span><img src="images/test_bee.png" class="bee-icon" id="beeIcon"></span>
+			<span><img src="images/bee_icon2.png" class="bee-icon" id="beeIcon"></span>
 			<h1>Hi, I'm <strong>Sarah</strong><br />
 				Software Developer & Creator</h1>
-			<p>I'm a software developer that... </p>
 			<ul class="actions special">
 				<li><a href="#projects" class="button scrolly">VIEW PORTFOLIO</a></li>
 			</ul>
@@ -52,15 +58,37 @@
 					</header>
 					<p>I’m a software developer, artist, dog lover, and former elementary teacher. I love creating interactive, responsive, and fun web applications. I am drawn towards analytical and methodical work, such as database and API integration, and enjoy tackling pesky bugs in the code. Prior to becoming a software developer, I worked as a website developer building sites with platforms like Wix. This sparked my love for web design and tech as a whole. I'm eager to learn all I can about software development.</p>
 					<p>When I'm not coding, you can find me cooking up new recipies, doodling on my iPad, biking, or reading horror novels.</p>
+					<a href="images/Sarah dePalo Resume 2021.pdf" download="Sarah dePalo Resume 2021" class="button animated-btn" id="resume">Download Resume</a>
 						
 				</div>
 				<div class="col-6 col-12-medium imp-medium">
-					<span class="image fit"><img src="images/Sarahv2.png" alt="" /></span>
+					<span class="image fit about-me"><img src="images/about_me_photo2.png" alt="image of Sarah dePalo" id="about-me-img"/></span>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	
+	<!-- Skills -->
+	<section id="skills" class="main style2">
+		<div class="container">
+			<div class="row gtr-150">
+				<div class="row">
+					<header class="major">
+						<h2>Skills</h2>
+					</header>
+					<ul class="major-icons" id="skill-icons">
+						<li><img src="images/javascript.png"></li>
+						<li><img src="images/python.png"></li>
+						<li><img src="images/react.png"></li>
+						<li><img src="images/node.png"></li>
+						<li><img src="images/postgresql.png"></li>
+						<li><img src="images/css100px.png"></li>
+						<li><img src="images/html100.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Projects -->
 	<section id="projects" class="main style1 special">
 		<div class="container">
@@ -73,10 +101,12 @@
 					<h3>Mouse Guide</h3>
 					<span class="image fit"><img src="images/walk_disney_recording.gif"
 							alt="gif of a walkthrough of the site mouseguide.net" /></span>
-							<ul class="actions special">
-								<li><img src="images/javascript-icon-gradient.png"></li>
-								<li><img src="images/javascript-icon-gradient.png"></li>
-								<li><img src="images/javascript-icon-gradient.png"></li>
+							<ul class="actions special project-icons">
+								<li><img src="images/javascript_blue.png"></li>
+								<li><img src="images/node_blue.png"></li>
+								<li><img src="images/postgreSQL_blue.png"></li>
+								<li><img src="images/css_blue.png"></li>
+								<li><img src="images/html_blue.png"></li>
 							</ul>
 
 				</div>
@@ -89,8 +119,8 @@
 						worked on creating the data structure and setting up the MVC for the itinerary and selection
 						pages.</p>
 					<ul class="actions special">
-						<li><a href="https://mouseguide.net/" class="button">Visit Site</a></li>
-						<li><a href="https://github.com/sarahdepalo/walk_disney" target="_blank" class="button">Github Repo</a></li>
+						<li><a href="https://mouseguide.net/" class="button animated-btn">Visit Site</a></li>
+						<li><a href="https://github.com/sarahdepalo/walk_disney" target="_blank" class="button animated-btn">Github Repo</a></li>
 					</ul>
 
 				</div>
@@ -102,17 +132,17 @@
 					<span class="image fit"><img src="images/homepage.gif"
 							alt="gif of a walkthrough of the site https://deto-no-yoru.netlify.app/"
 							class="walkthrough" /></span>
-					<ul class="actions special">
-						<li><img src="images/javascript-icon-gradient.png"></li>
-						<li><img src="images/javascript-icon-gradient.png"></li>
-						<li><img src="images/javascript-icon-gradient.png"></li>
+					<ul class="actions special project-icons">
+						<li><img src="images/javascript_blue.png"></li>
+						<li><img src="images/css_blue.png"></li>
+						<li><img src="images/html_blue.png"></li>
 					</ul>
 				</div>
 				<div class="col-6 col-12-medium project-col">
 					<p>Tired of arguing with your parnter or friends about what to watch or eat? Deto No Yoru is our group's solution to ending those painful nights of endless scrolling. Deto No Yoru generates a random anime and local restaurant, so you can easily plan your perfect date night. As part of this three person team, I was responsible for fetching information from APIs and the backend JavaScript. I also did the CSS and JavaScript for the 'Trending' page. A major focus for our group was to ensure that this web app was completely mobile responsive.</p>
 					<ul class="actions special">
-						<li><a href="https://deto-no-yoru.netlify.app/" class="button">Visit Site</a></li>
-						<li><a href="https://github.com/sarahdepalo/Deto_No_Yoru" target="_blank" class="button">Github Repo</a></li>
+						<li><a href="https://deto-no-yoru.netlify.app/" class="button animated-btn">Visit Site</a></li>
+						<li><a href="https://github.com/sarahdepalo/Deto_No_Yoru" target="_blank" class="button animated-btn">Github Repo</a></li>
 					</ul>
 
 				</div>
@@ -123,16 +153,14 @@
 					<span class="image fit"><img src="images/screen_recording.gif"
 							alt="gif of a walkthrough of Python Pokemon - a terminal-based Pokemon RPG game"
 							class="walkthrough" /></span>
-					<ul class="actions special">
-						<li><img src="images/javascript-icon-gradient.png"></li>
-						<li><img src="images/javascript-icon-gradient.png"></li>
-						<li><img src="images/javascript-icon-gradient.png"></li>
+					<ul class="actions special project-icons">
+						<li><img src="images/python_blue.png"></li>
 					</ul>
 				</div>
 				<div class="col-6 col-12-medium project-col">
 					<p>Python Pokémon is a terminal-based Pokémon RPG game. Players can choose their starter Pokémon, battle wild Pokémon, visit Nurse Joy, and even buy items from the Poké Mart to use in battle. One of the main highlights of the game is being able to choose different attacks and that Pokémon are stronger or weaker depending on their 'type' and the opponent's 'type'. For example, a water Pokémon will be stronger against a fire Pokémon. As part of this four person team, I was primarily responsible for creating the layout of the game, the starter Pokemon selection, and the Nurse Joy function. This game can be played on any terminal by following the instructions in the GitHub repository.</p>
 					<ul class="actions special">
-						<li><a href="https://github.com/sarahdepalo/Pokemon-RPG" target="_blank" class="button">Github Repo</a></li>
+						<li><a href="https://github.com/sarahdepalo/Pokemon-RPG" target="_blank" class="button animated-btn">Github Repo</a></li>
 					</ul>
 
 				</div>
@@ -140,42 +168,7 @@
 		</div>
 	</section>
 
-	<!-- Skills -->
-	<section id="two" class="main style2">
-		<div class="container">
-			<div class="row gtr-150">
-				<div class="row">
-					<header class="major">
-						<h2>Skills</h2>
-					</header>
-					<ul class="major-icons">
-						<li><span class="icon solid style1 major fa-code"></span></li>
-						<li><span class="icon solid style2 major fa-bolt"></span></li>
-						<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-						<li><span class="icon solid style4 major fa-cog"></span></li>
-						<li><span class="icon solid style5 major fa-desktop"></span></li>
-						<li><span class="icon solid style6 major fa-calendar"></span></li>
-					</ul>
-				</div>
-				<!-- What I'm Learning -->
-				<div class="row">
-					<header class="major">
-						<h2>What I'm Learning</h2>
-					</header>
-					<ul class="major-icons">
-						<li><span class="icon solid style1 major fa-code"></span></li>
-						<li><span class="icon solid style2 major fa-bolt"></span></li>
-						<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-						<li><span class="icon solid style4 major fa-cog"></span></li>
-						<li><span class="icon solid style5 major fa-desktop"></span></li>
-						<li><span class="icon solid style6 major fa-calendar"></span></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Four -->
+	<!-- Contact/Connect -->
 	<section id="contact" class="main style2 special">
 		<div class="container">
 			<header class="major">
@@ -183,13 +176,11 @@
 			</header>
 			<p>The quickest way to reach me is through email or LinkedIn.</p>
 			<ul class="actions special">
-				<li><a href="mailto: sarahdepalo99@gmail.com" class="button wide primary">Send an Email</a></li>
-				<li><a href="https://www.linkedin.com/in/sarahdepalo/" class="button wide">Connect With Me</a></li>
+				<li><a href="mailto: sarahdepalo99@gmail.com" class="button wide primary animated-btn">Send an Email</a></li>
+				<li><a href="https://www.linkedin.com/in/sarahdepalo/" class="button wide animated-btn">Connect With Me</a></li>
 			</ul>
 		</div>
 	</section>
-
-
 
 	<!-- Footer -->
 	<section id="footer">
