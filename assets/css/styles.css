@@ -150,7 +150,7 @@ nav li {
     }
 
     #about-me-img {
-        height: 300px;
+        height: 280px;
         width: auto;
         margin: 0 auto;
     }
@@ -198,4 +198,27 @@ nav li {
 
 /* IPAD RESPONSIVENSS */
 
-/* Need to fix image size, resume button, skill icons, and project icons! * /
+/* Need to fix image size, resume button, skill icons, and project icons! */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #about-me-img {
+        height: auto;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #resume {
+        width:250px;
+    }
+}
+
+/* iPad Pro Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    #about-me-img {
+        height: 450px;
+    }
+  }
