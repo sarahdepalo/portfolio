@@ -125,6 +125,11 @@ nav li {
 /* Mobile Responsiveness */
 
 @media screen and (max-width: 980px) {
+    #intro-sentence {
+        display: inline-block;
+        width: 100%;
+    }
+    
     .project-col p {
         margin-top: 5px;
     }
