@@ -1,239 +1,267 @@
 .site-title {
-    font-family: 'Yellowtail', cursive;
-    font-size: 35px;
-    color: white;
-    margin-top:15px;
-    padding-left: 60px;
-    padding-bottom: 5px;
+  font-family: "Yellowtail", cursive;
+  font-size: 35px;
+  color: white;
+  margin-top: 15px;
+  padding-left: 60px;
+  padding-bottom: 5px;
 }
 
 nav {
-    padding: 0px 20px;
-    margin-bottom: -20px;
-    background-color: #170b4d;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: -20px;
+  background-color: #170b4d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
-    text-decoration: none;
-    border-bottom: 0px;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    
+  text-decoration: none;
+  border-bottom: 0px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
 }
 
 nav a:hover {
-    color: #8addaa;
+  color: #8addaa;
 }
 
 nav ul {
-    align-self: center;
-    padding-right: 60px;
-    margin-top: 15px;
+  align-self: center;
+  padding-right: 60px;
+  margin-top: 15px;
 }
 
 nav li {
-    list-style: none;
-    display: inline;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-transform: uppercase;
+  list-style: none;
+  display: inline;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
 }
 
 #header a {
-    text-decoration: none;
-    border-bottom: 0px;
+  text-decoration: none;
+  border-bottom: 0px;
 }
 
 .bee-icon {
-    height: 160px;
-    margin-bottom: -13px;
+  height: 160px;
+  margin-bottom: -13px;
 }
 
 /* Class is toggled on click s*/
 
 @keyframes spinning {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .spin {
-    animation-name: spinning;
-    animation-duration: 2s;
-    animation-iteration-count: initial;
-    animation-timing-function: linear;
+  animation-name: spinning;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
 }
 
 /* About Me */
 
 .about-me img {
-    border-radius: 25px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Skills */
 
 .major {
-    width: 100%;
+  width: 100%;
 }
 
 .major-icons img {
-    height: 70px;
-    margin-left: -2px;
-    margin-right: -2px;
+  height: 70px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 #skill-icons img {
-    height: 55px;
+  height: 55px;
 }
 
 ul.major-icons li {
-    padding: 1.5em;
+  padding: 1.5em;
+}
+
+#expressIcon {
+  height: 40px !important;
+  margin-bottom: 10px;
 }
 
 /* Projects */
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-bottom: 25px;
+    
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 #projects h3 {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .project-col p {
-    text-align: start;
-    margin-top: 55px;
+  text-align: start;
+  margin-top: 55px;
 }
 
 /* fade-in animation */
 
 .animated {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-delay: 1;
- }
- 
- @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- 
- @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- 
- .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
- }
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
 
 /* Mobile Responsiveness */
 
 @media screen and (max-width: 980px) {
-    #intro-sentence {
-        display: inline-block;
-        width: 100%;
-    }
-    
-    .project-col p {
-        margin-top: 5px;
-    }
+  #intro-sentence {
+    display: inline-block;
+    width: 100%;
+  }
 
-    nav {
-        padding: 0px;
-    }
+  .project-col p {
+    margin-top: 5px;
+  }
 
-    .site-title {
-        padding-left:20px;
-    }
+  nav {
+    padding: 0px;
+  }
 
-    nav ul {
-        padding-right: 5px;
-    }
+  .site-title {
+    padding-left: 20px;
+  }
 
-    nav a {
-        font-size: 15px;
-    }
+  nav ul {
+    padding-right: 5px;
+  }
 
-    .bee-icon {
-        height: 150px;
-    }
+  nav a {
+    font-size: 15px;
+  }
 
-    #about-me-img {
-        height: 280px;
-        width: auto;
-        margin: 0 auto;
-    }
+  .bee-icon {
+    height: 150px;
+  }
 
-    .image.fit .about-me {
-        width:auto;
-    }
+  #about-me-img {
+    height: 280px;
+    width: auto;
+    margin: 0 auto;
+  }
 
-    #resume {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+  .image.fit .about-me {
+    width: auto;
+  }
 
-    #skill-icons img {
-        height: 45px;
-        margin-top: 5px;
-    }
+  #resume {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
-    .project-icons img {
-        height: 36px;
-        display: inline;
-        width: auto !important;
-    } 
+  #skill-icons img {
+    height: 45px;
+    margin-top: 5px;
+  }
+
+  .project-icons img {
+    height: 36px;
+    display: inline;
+    width: auto !important;
+  }
+
+  #expressIcon {
+    height: 40px;
+    margin-bottom: 5px !important;
+  }
 }
 
 /* specifically adjust the project items to display inline */
 
 @media screen and (max-width: 480px) {
-
-    ul.project-icons:not(.fixed) {
-        -moz-flex-direction: row;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        margin-left: 0;
-        width: 100% !important;
-    }
+  ul.project-icons:not(.fixed) {
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: 0;
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    ul.actions:not(.fixed) li:first-child {
-        padding-top: .8em;
-    }
+  ul.actions:not(.fixed) li:first-child {
+    padding-top: 0.8em;
+  }
 }
 
 /* IPAD RESPONSIVENSS */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    #about-me-img {
-        height: auto;
-        width: auto;
-        margin: 0 auto;
-    }
+  #about-me-img {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+  }
 
-    #resume {
-        width:250px;
-    }
+  #resume {
+    width: 250px;
+  }
 }
 
 /* iPad Pro Portrait */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-    #about-me-img {
-        height: 450px;
-    }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #about-me-img {
+    height: 450px;
   }
+}
