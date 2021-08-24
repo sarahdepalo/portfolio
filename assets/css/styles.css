@@ -80,10 +80,22 @@ nav li {
 
 /* Skills */
 
+.major {
+    width: 100%;
+}
+
 .major-icons img {
     height: 70px;
     margin-left: -2px;
     margin-right: -2px;
+}
+
+#skill-icons img {
+    height: 55px;
+}
+
+ul.major-icons li {
+    padding: 1.5em;
 }
 
 /* Projects */
@@ -202,8 +214,6 @@ nav li {
 }
 
 /* IPAD RESPONSIVENSS */
-
-/* Need to fix image size, resume button, skill icons, and project icons! */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     #about-me-img {
