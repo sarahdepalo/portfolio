@@ -32,8 +32,15 @@
 })(jQuery);
 
 
-//Adds spin class to bee icon
+//Adds spin class to bee icon on load
 const beeIcon = document.getElementById('beeIcon');
+window.onload = () => {
+	beeIcon.classList.add('spin');
+	setTimeout(() => {
+		beeIcon.classList.remove('spin');
+	}, 2100);
+}
+// Adds spin class to bee icon when clicked
 beeIcon.addEventListener('click', () => {
 	beeIcon.classList.add('spin');
 	setTimeout(() => {
