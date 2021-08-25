@@ -47,6 +47,10 @@ nav li {
   border-bottom: 0px;
 }
 
+#header {
+  height: 80vh;
+}
+
 .bee-icon {
   height: 160px;
   margin-bottom: -13px;
@@ -91,6 +95,8 @@ nav li {
 
 #skill-icons img {
   height: 55px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
 
 ul.major-icons li {
@@ -102,22 +108,54 @@ ul.major-icons li {
   margin-bottom: 10px;
 }
 
+/* Skills Hoverbox */
+.iconContainer {
+  position: relative;
+  width: 50%;
+}
+
+.hoverContent {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hoverText {
+  color: white;
+  font-size: 18px;
+  letter-spacing:1.8px;
+  padding: 16px 32px;
+  margin-top: -30px;
+}
+
+.iconContainer:hover img  {
+  opacity: 0.3;
+}
+
+.iconContainer:hover .hoverContent {
+  opacity: 1;
+}
+
 /* Projects */
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    margin-bottom: 25px;
-    
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin-bottom: 25px;
 }
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 #projects h3 {
@@ -224,6 +262,16 @@ ul.major-icons li {
     height: 40px;
     margin-bottom: 5px !important;
   }
+
+  .hoverText {
+      font-size: 11px;
+  }
+
+  #skill-icons {
+      margin-left: 10px;
+  }
+
+
 }
 
 /* specifically adjust the project items to display inline */
@@ -257,11 +305,24 @@ ul.major-icons li {
   #resume {
     width: 250px;
   }
+
+  #header {
+      height: 65vh;
+  }
+
+  .postgresql {
+      top: 25%;
+      left: 50px;
+  }
 }
 
 /* iPad Pro Portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #about-me-img {
     height: 450px;
+  }
+
+  #header {
+      height: 40vh;
   }
 }
