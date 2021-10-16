@@ -56,6 +56,10 @@ nav li {
   margin-bottom: -13px;
 }
 
+.bee-icon:hover {
+  cursor: pointer;
+}
+
 /* Class is toggled on click s*/
 
 @keyframes spinning {
