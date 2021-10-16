@@ -48,7 +48,11 @@ nav li {
 }
 
 #header {
-  height: 80vh;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bee-icon {
@@ -337,7 +341,7 @@ ul.major-icons li {
 /* GALAXY FOLD */
 
 
-@media (max-width: 320px) {
+@media (max-width: 310px) {
   #header {
     max-width: 280px;
   }
