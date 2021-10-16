@@ -83,6 +83,7 @@ nav li {
 .about-me img {
   border-radius: 25px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  height: auto;
 }
 
 /* Skills */
@@ -164,7 +165,7 @@ ul.major-icons li {
 }
 
 #projects h3 {
-  font-size: 23px;
+  font-size: 26px;
 }
 
 .project-col p {
@@ -302,7 +303,7 @@ ul.major-icons li {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #about-me-img {
-    height: auto;
+    height: 400px;
     width: auto;
     margin: 0 auto;
   }
@@ -329,5 +330,34 @@ ul.major-icons li {
 
   #header {
       height: 40vh;
+  }
+}
+
+
+/* GALAXY FOLD */
+
+
+@media (max-width: 320px) {
+  #header {
+    max-width: 280px;
+  }
+
+  nav {
+    max-width: 280px;
+  }
+
+  nav ul {
+    padding: 0px;
+  }
+
+  nav li {
+    padding: 5px;
+  }
+  .site-title {
+    padding-left: 8px;
+  }
+
+  #about, #skills, #projects, #contact, #footer {
+    max-width: 280px;
   }
 }
