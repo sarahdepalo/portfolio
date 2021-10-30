@@ -19,12 +19,11 @@
 			xxsmall:  [ null,      '320px'  ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
+		document.addEventListener('DOMContentLoaded', () => {
+			setTimeout(() => {
 				$body.removeClass('is-preload');
-			}, 100);
-		});
+			}, 1000)
+		})
 
 	// Scrolly.
 		$('.scrolly').scrolly();
