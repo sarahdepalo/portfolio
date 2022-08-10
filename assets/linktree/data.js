@@ -30,6 +30,12 @@ const data = [
       alt: "Hashnode icon",
     },
     {
+      name: "The Best Email Framework",
+      link: "https://sarahdepalo.hashnode.dev/the-email-framework-that-makes-creating-emails-a-breeze",
+      icon: "./assets/linktree/icons/hashnode.svg",
+      alt: "Hashnode icon",
+    },
+    {
       name: "Email Dev Tips & Tricks",
       link: "https://sarahdepalo.hashnode.dev/email-development-tips-and-tricks",
       icon: "./assets/linktree/icons/hashnode.svg",
