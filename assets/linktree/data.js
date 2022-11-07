@@ -18,6 +18,12 @@ const data = [
       alt: "GitHub icon",
     },
     {
+      name: "Create a Twitter Bot",
+      link: "https://sarahdepalo.hashnode.dev/create-a-twitter-bot-with-python",
+      icon: "./assets/linktree/icons/hashnode.svg",
+      alt: "Hashnode icon",
+    },
+    {
       name: "Build a Web Scraper",
       link: "https://sarahdepalo.hashnode.dev/creating-a-basic-web-scraper-with-python",
       icon: "./assets/linktree/icons/hashnode.svg",

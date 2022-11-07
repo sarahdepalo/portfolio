@@ -197,6 +197,9 @@ html {
   .link-container a:nth-child(8) {
     animation-delay: 1.3s;
   }
+  .link-container a:nth-child(9) {
+    animation-delay: 1.4s;
+  }
   
   @media screen and (max-width: 1024px) {
     main {
